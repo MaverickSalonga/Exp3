@@ -1,0 +1,46 @@
+#include<iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+	double temperatureA[7], temperatureB[7], temperatureC[7];
+	int i;
+
+	cout << "Enter the temperatures for Province A, Province B and Province C for every day of the week " << endl;
+	cout << endl;
+	cout << "ENTER TEMPERATURE FOR PROVINCE A" << endl;
+	cout << endl;
+
+
+	for (i = 0; i < 7; i++)
+		{
+			cout << "Province A, Day " << i + 1 << " --- "; 
+			cin >> temperatureA[i];	
+		}
+
+	cout << endl;
+	cout << "ENTER TEMPERATURE FOR PROVINCE B" << endl;
+	cout << endl;
+
+	for (i = 0; i < 7; i++)
+	{
+		cout << "Province B, Day " << i + 1 << " --- ";
+		cin >> temperatureB[i];
+	}
+
+	cout << endl;
+	cout << "ENTER TEMPERATURE FOR PROVINCE C" << endl;
+	cout << endl;
+
+	for (i = 0; i < 7; i++)
+	{
+		cout << "Province C, Day " << i + 1 << " --- ";
+		cin >> temperatureC[i];
+	}
+
+	return 0;
+	
+}

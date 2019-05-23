@@ -1,0 +1,35 @@
+ #include<iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+	int q,w,e;
+	string temp;
+	
+	cout << "ENTER THE SIZE OF THE ARRAY: " << endl << " --- "; 
+	cin >> q;
+	string a[q];
+	cout << "ENTER THE ELEMENTS TO BE SORTED: " << endl; 
+	
+		for( w=0; w<q; ++w )
+		cin >> a[w];
+		
+		for( w=1; w<q; ++w )
+		{
+		for( e=0; e<(q-w); ++e )
+		if(a[e]>a[e+1])
+			{
+			temp=a[e];
+			a[e]=a[e+1];
+			a[e+1]=temp;
+			}
+		}
+	
+	cout << endl;
+	cout << "SORTED ELEMENTS :";
+		for( w=0; w<q; ++w)
+	cout << ", "<<a[w];
+		
+	return 0;
+}
